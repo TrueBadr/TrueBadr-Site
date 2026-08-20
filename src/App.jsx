@@ -43,7 +43,9 @@ function HomePage() {
                         </a>
 
                         <div className="article-meta">
-                            <time dateTime={article.date}>{formatDate(article.date)}</time>
+                            <time dateTime={article.date}>
+                                {formatDate(article.date)}
+                            </time>
                             <span>قراءة {article.readingTime} دقائق</span>
                         </div>
                     </article>
@@ -93,7 +95,9 @@ function ArticlePage({ id }) {
                     <h1>{article.title}</h1>
 
                     <div className="article-meta">
-                        <time dateTime={article.date}>{formatDate(article.date)}</time>
+                        <time dateTime={article.date}>
+                            {formatDate(article.date)}
+                        </time>
                         <span>قراءة {article.readingTime} دقائق</span>
                     </div>
                 </header>
