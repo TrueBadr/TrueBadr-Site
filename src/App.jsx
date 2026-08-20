@@ -38,8 +38,10 @@ function HomePage() {
                                 navigate(`/${article.id}`)
                             }}
                         >
-                            <span className="article-number">{article.id}</span>
-                            <span className="article-title">{article.title}</span>
+                            <span className="article-heading">
+    <span className="article-number">{article.id}</span>
+    <span className="article-title">{article.title}</span>
+</span>
                         </a>
 
                         <div className="article-meta">

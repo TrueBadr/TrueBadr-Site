@@ -93,11 +93,17 @@ h1 {
   text-underline-offset: 5px;
 }
 
-.article-number,
-.article-id {
+.article-heading {
+  display: inline-flex;
+  align-items: baseline;
+  direction: ltr;
+}
+
+.article-number {
   color: #777064;
   direction: ltr;
   font-family: system-ui, sans-serif;
+  flex-shrink: 0;
 }
 
 .article-number::after {
@@ -106,6 +112,7 @@ h1 {
 }
 
 .article-title {
+  direction: rtl;
   min-width: 0;
 }
 
@@ -132,6 +139,9 @@ h1 {
 
 .article-id {
   margin: 0 0 0.5rem;
+  color: #777064;
+  direction: ltr;
+  font-family: system-ui, sans-serif;
 }
 
 .markdown-body {
