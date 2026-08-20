@@ -69,7 +69,7 @@ function parseArticle(raw) {
 
 export const articles = Object.values(articleFiles)
     .map(parseArticle)
-    .sort((a, b) => a.id - b.id)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
 
 export function getArticle(id) {
   return articles.find((article) => article.id === id)
